@@ -23,7 +23,7 @@ const Content = styled.div`
 	border-top: 3px solid #3854cc;
 	width: 100%;
 	overflow-y: visible;
-	overflow-x: auto;
+	overflow-x: hidden;
 	scroll-snap-type: x mandatory;
 `;
 

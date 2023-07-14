@@ -12,6 +12,7 @@ const Navbar = styled.nav`
 	align-items: center;
 	height: 7em;
 	font-weight: bold;
+	font-size: 16px;
 	z-index: 2;
 `;
 

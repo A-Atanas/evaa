@@ -23,6 +23,7 @@ const InvitationContainer = styled.div`
 
 	p {
 		color: #adb9cb;
+		font-size: 24px;
 	}
 
 	& > svg {

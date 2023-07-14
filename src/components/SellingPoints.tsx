@@ -17,7 +17,7 @@ const Point = styled.div`
 	justify-content: space-between;
 	font-weight: bold;
 	position: relative;
-	margin-left: 10em;
+	margin-left: 5em;
 
 	&:nth-child(2) {
 		flex-direction: row-reverse;
@@ -26,7 +26,7 @@ const Point = styled.div`
 		img {
 			position: absolute;
 			left: 0;
-			width: 40%;
+			width: 700px;
 		}
 		svg {
 			position: relative;
@@ -49,7 +49,7 @@ const Texts = styled.div`
 	width: 40%;
 
 	h1 {
-		background-image: linear-gradient(90deg, #3854cc, #278ce5, #4c65d1);
+		background-image: linear-gradient(90deg, #278ce5, #4c65d1);
 		background-size: 100%;
 		background-repeat: repeat;
 		background-clip: text;
@@ -74,7 +74,7 @@ const Texts = styled.div`
 	p {
 		color: #8792a4;
 		margin-bottom: 2em;
-		width: 60%;
+		font-size: 24px;
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 		hyphens: auto;
@@ -92,6 +92,7 @@ const Texts = styled.div`
 		p {
 			margin-top: 0;
 			width: 80%;
+			font-weight: 600;
 		}
 
 		b {

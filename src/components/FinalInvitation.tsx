@@ -7,7 +7,8 @@ const JoinUs = styled.div`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-block: 5em;
+	margin-block-start: 15em;
+	margin-block-end: 10em;
 
 	h1 {
 		margin-block-end: 0;
@@ -15,6 +16,7 @@ const JoinUs = styled.div`
 
 	p {
 		margin-block-end: 3em;
+		color: #ADB9CB;
 	}
 
 	b {
@@ -33,7 +35,7 @@ const Tokenomics = styled.div`
 	}
 
 	svg {
-		padding: .5em;
+		padding: 10px;
 	}
 `;
 
