@@ -12,10 +12,13 @@ const JoinUs = styled.div`
 
 	h1 {
 		margin-block-end: 0;
+		font-size: 44px;
 	}
 
 	p {
 		margin-block-end: 3em;
+		margin-block-start: 0;
+		font-size: 24px;
 		color: #ADB9CB;
 	}
 
@@ -29,13 +32,14 @@ const Tokenomics = styled.div`
 	align-items: center;
 
 	& > div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background-color: #6272ca;
 		margin-left: 2em;
-		border-radius: 2em;
-	}
-
-	svg {
-		padding: 10px;
+		border-radius: 25px;
+		width: 50px;
+		height: 50px;
 	}
 `;
 

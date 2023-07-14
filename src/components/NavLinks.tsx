@@ -4,7 +4,7 @@ import { FaChevronDown } from "react-icons/fa";
 const Links = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: 25%;
+	width: 400px !important;
 
 	p {
 		color: #3854cc;

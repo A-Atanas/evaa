@@ -12,7 +12,7 @@ import usdt from "../assets/usdt.png";
 const Coins = styled.div`
 	display: flex;
 	justify-content: space-around;
-	margin-block: 15em;
+	margin-block: 225px 180px;
 
 	img {
 		height: 90px;
@@ -23,6 +23,7 @@ const Coins = styled.div`
 const MainContent = styled.main`
 	display: flex;
 	flex-direction: column;
+	width: 1400px;
 `;
 
 const Main = () => {

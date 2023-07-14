@@ -17,7 +17,6 @@ const Point = styled.div`
 	justify-content: space-between;
 	font-weight: bold;
 	position: relative;
-	margin-left: 5em;
 
 	&:nth-child(2) {
 		flex-direction: row-reverse;
@@ -25,13 +24,14 @@ const Point = styled.div`
 
 		img {
 			position: absolute;
-			left: 0;
-			width: 700px;
+			left: 50px;
+			top: 50px;
+			width: 650px;
 		}
 		svg {
 			position: relative;
 			bottom: 0;
-			right: 0;
+			left: 0;
 			z-index: -1;
 		}
 	}
@@ -39,7 +39,11 @@ const Point = styled.div`
 	&:last-child {
 		img {
 			position: relative;
-			bottom: 100px;
+			left: 50px;
+		}
+
+		svg {
+			left: 0;
 		}
 	}
 `;
@@ -49,7 +53,12 @@ const Texts = styled.div`
 	width: 40%;
 
 	h1 {
-		background-image: linear-gradient(90deg, #278ce5, #4c65d1);
+		background-image: linear-gradient(
+			89.83deg,
+			#3854cc -5.92%,
+			#278ce5 -5.91%,
+			#4c65d1 85.36%
+		);
 		background-size: 100%;
 		background-repeat: repeat;
 		background-clip: text;
@@ -58,27 +67,44 @@ const Texts = styled.div`
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
 		font-size: 128px;
+		line-height: 120px;
 		font-weight: 900;
-		line-height: 100px;
-		letter-spacing: -5px;
-		height: 256px;
-		margin-bottom: 0;
+		letter-spacing: 6px;
+		margin-block-end: 0;
+
+		&:nth-child(2) {
+			display: inline-block;
+			margin-top: -30px;
+			font-size: 108px;
+			line-height: 128px;
+			letter-spacing: 0;
+			font-weight: 800;
+		}
+
+		& + p {
+			margin-top: 1em;
+			font-weight: 700;
+		}
 	}
 
 	h3 {
 		color: #3854cc;
 		font-size: 40px;
 		font-weight: 800;
+		margin-bottom: 0;
 	}
 
 	p {
 		color: #8792a4;
 		margin-bottom: 2em;
 		font-size: 24px;
+		line-height: 32px;
 		overflow-wrap: break-word;
 		word-wrap: break-word;
-		hyphens: auto;
 		min-height: 4em;
+		width: 75%;
+		font-weight: 600;
+		margin-top: 0;
 	}
 
 	b {
@@ -89,10 +115,18 @@ const Texts = styled.div`
 		width: 100%;
 		display: flex;
 
+		&:first-of-type {
+			margin-top: 2em;
+		}
+
+		&:last-of-type {
+			margin-bottom: 2em;
+		}
+
 		p {
 			margin-top: 0;
+			margin-bottom: 24px;
 			width: 80%;
-			font-weight: 600;
 		}
 
 		b {
@@ -111,10 +145,16 @@ const Texts = styled.div`
 `;
 
 const Images = styled.div`
+	position: relative;
+	img {
+		position: relative;
+		right: -100px;
+	}
+
 	svg {
 		position: absolute;
 		bottom: 50px;
-		right: 100px;
+		left: 45%;
 	}
 `;
 
@@ -124,9 +164,9 @@ const CarouselIndicatorContainer = styled.div`
 `;
 
 const CarouselIndicator = styled.div`
-	width: 15px;
-	height: 15px;
-	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 3px;
 	background-color: #9ea8d3;
 	cursor: pointer;
 	transition: all 0.5s;
@@ -164,7 +204,8 @@ const SellingPoints = () => {
 		<div>
 			<Point>
 				<Texts>
-					<h1>EVAA protocol</h1>
+					<h1>EVAA</h1>
+					<h1>protocol</h1>
 					<p>
 						The first decentralized lending protocol on <b>TON</b> that lets
 						users lend or borrow assets without going to a centralized
@@ -174,9 +215,15 @@ const SellingPoints = () => {
 				</Texts>
 				<Images>
 					<img src={duck} alt="Duck holding TONcoin" />
-					<svg width="270" height="270">
-						<circle cx="135" cy="135" r="135" fill="#7669F7" />
-						<TonCoin x="80" y="80" />
+					<svg width="300" height="300">
+						<defs>
+							<linearGradient id="tonColor" x1="0" x2="0" y1="0" y2="1">
+								<stop offset="0%" stopColor="#4C65D1" />
+								<stop offset="100%" stopColor="#7669F7" />
+							</linearGradient>
+						</defs>
+						<circle cx="150" cy="150" r="150" fill="url(#tonColor)" />
+						<TonCoin width="150" height="150" x="80" y="80" />
 					</svg>
 				</Images>
 			</Point>
@@ -203,14 +250,14 @@ const SellingPoints = () => {
 				<Texts>
 					<h3>Why EVAA</h3>
 					<div className="argument">
-						<Medal />
+						<Medal width="24"/>
 						<p>
 							<b>First on TON</b>
 							EVAA Protocol is the first TON blockchain lending protocol
 						</p>
 					</div>
 					<div className="argument">
-						<Cross />
+						<Cross width="24" />
 						<p>
 							<b>TON native and wrapped assets</b>
 							Evaa Protocol has TON and TON native tokens besides wrapped tokens
@@ -218,7 +265,7 @@ const SellingPoints = () => {
 						</p>
 					</div>
 					<div className="argument">
-						<Shield />
+						<Shield width="24" />
 						<p>
 							<b>Decentralized</b>
 							The protocol is based on smart contracts — fully decentralized

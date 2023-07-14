@@ -7,11 +7,13 @@ const FooterContainer = styled.footer`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 2em 5em;
 	background-color: #222940;
 	color: white;
 	font-weight: bold;
+	font-family: Montserrat;
+	width: 100%;
 `;
 
 const FooterLogo = styled.div`
@@ -45,13 +47,13 @@ const SocialLinks = styled.div`
 		background-color: transparent;
 		border: 1px solid rgba(168, 175, 183, 0.2);
 		color: #a8afb7;
-        transition: all .2s;
-        cursor: pointer;
+		transition: all 0.2s;
+		cursor: pointer;
 
-        &:hover {
-		    background-color: #a8afb7;
-            color: #222940;
-        }
+		&:hover {
+			background-color: #a8afb7;
+			color: #222940;
+		}
 	}
 `;
 

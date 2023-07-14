@@ -13,17 +13,19 @@ const InvitationContainer = styled.div`
 	padding: 2em;
 	background-color: #6272ca;
 	color: white;
-	border-radius: 1em;
+	border-radius: 10px;
 
 	h1 {
 		font-size: 44px;
-		letter-spacing: -2px;
+		font-weight: 700;
 		margin: 0;
 	}
 
 	p {
 		color: #adb9cb;
 		font-size: 24px;
+		font-weight: 500;
+		margin-top: 0;
 	}
 
 	& > svg {

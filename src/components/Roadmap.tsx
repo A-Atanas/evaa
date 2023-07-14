@@ -7,8 +7,8 @@ const RoadmapContainer = styled.div`
 	flex-direction: column;
 	align-items: start;
 	align-self: center;
-	width: 80%;
-	margin-bottom: 15em;
+	width: 100%;
+	margin-bottom: 320px;
 
 	h1 {
 		color: #3854cc;
@@ -101,6 +101,7 @@ const Explanation = styled.p`
 	color: #474b52;
 	font-weight: 600;
 	margin-top: 0;
+	font-family: Montserrat;
 `;
 
 const Roadmap = () => {

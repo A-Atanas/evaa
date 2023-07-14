@@ -8,20 +8,40 @@ const Navbar = styled.nav`
 	top: 0;
 	background-color: white;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	height: 7em;
 	font-weight: bold;
 	font-size: 16px;
+	font-family: Montserrat;
 	z-index: 2;
+	width: 100%;
+	padding: auto;
+
+	& > div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1600px;
+	}
+
+	.navbarItem {
+		width: 200px;
+	}
 `;
 
 const Header = () => {
 	return (
 		<Navbar>
-			<img src={logo} alt="EVAA logotype" width="48" height="48" />
-			<NavLinks />
-			<Button>App</Button>
+			<div>
+				<div className="navbarItem">
+					<img src={logo} alt="EVAA logotype" width="48" height="48" />
+				</div>
+				<NavLinks />
+				<div className="navbarItem">
+					<Button>App</Button>
+				</div>
+			</div>
 		</Navbar>
 	);
 };
