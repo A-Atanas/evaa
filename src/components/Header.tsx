@@ -22,10 +22,11 @@ const Navbar = styled.nav`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 1600px;
+		width: 1400px;
 	}
 
 	.navbarItem {
+		display: flex;
 		width: 200px;
 	}
 `;

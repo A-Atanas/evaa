@@ -102,7 +102,6 @@ const Texts = styled.div`
 		overflow-wrap: break-word;
 		word-wrap: break-word;
 		min-height: 4em;
-		width: 75%;
 		font-weight: 600;
 		margin-top: 0;
 	}
@@ -126,7 +125,7 @@ const Texts = styled.div`
 		p {
 			margin-top: 0;
 			margin-bottom: 24px;
-			width: 80%;
+			width: 85%;
 		}
 
 		b {

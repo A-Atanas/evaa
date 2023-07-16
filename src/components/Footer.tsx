@@ -20,6 +20,7 @@ const FooterLogo = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	width: 300px;
 
 	h2 {
 		margin-left: 1em;
@@ -35,7 +36,10 @@ const LogoImage = styled.div`
 
 const SocialLinks = styled.div`
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	column-gap: 0.5em;
+	width: 300px;
 
 	a {
 		display: flex;
@@ -58,7 +62,7 @@ const SocialLinks = styled.div`
 `;
 
 const JustifyFix = styled.div`
-	width: 20%;
+	width: 300px;
 `;
 
 const Footer = () => {
