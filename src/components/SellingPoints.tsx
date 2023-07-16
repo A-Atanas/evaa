@@ -24,7 +24,7 @@ const Point = styled.div`
 
 		img {
 			position: absolute;
-			left: 50px;
+			left: 70px;
 			top: 50px;
 			width: 650px;
 		}
@@ -145,6 +145,7 @@ const Texts = styled.div`
 
 const Images = styled.div`
 	position: relative;
+	width: 55%;	
 	img {
 		position: relative;
 		right: -100px;
@@ -153,7 +154,7 @@ const Images = styled.div`
 	svg {
 		position: absolute;
 		bottom: 50px;
-		left: 45%;
+		left: 50%;
 	}
 `;
 
