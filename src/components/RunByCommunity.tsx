@@ -25,7 +25,7 @@ const InvitationContainer = styled.div`
 		color: #adb9cb;
 		font-size: 24px;
 		font-weight: 500;
-		margin-top: 0;
+		margin-block: 0;
 	}
 
 	& > svg {

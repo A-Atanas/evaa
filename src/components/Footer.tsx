@@ -8,7 +8,7 @@ const FooterContainer = styled.footer`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	padding: 2em 5em;
+	padding: 3em 5em;
 	background-color: #222940;
 	color: white;
 	font-weight: bold;
@@ -19,19 +19,30 @@ const FooterContainer = styled.footer`
 const FooterLogo = styled.div`
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: end;
 	width: 300px;
 
 	h2 {
 		margin-left: 1em;
+		margin-block: 0;
+		font-weight: 600;
+		line-height: 20px;
 	}
 `;
 
 const LogoImage = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: white;
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
+
+	img {
+		width: 30px;
+		height: 30px;
+	}
 `;
 
 const SocialLinks = styled.div`

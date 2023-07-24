@@ -23,6 +23,7 @@ const Coins = styled.div`
 const MainContent = styled.main`
 	display: flex;
 	flex-direction: column;
+	font-family: Cairo;
 	width: 1400px;
 `;
 

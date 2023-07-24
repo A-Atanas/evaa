@@ -13,6 +13,7 @@ const JoinUs = styled.div`
 	h1 {
 		margin-block-end: 0;
 		font-size: 44px;
+		font-weight: 800;
 	}
 
 	p {

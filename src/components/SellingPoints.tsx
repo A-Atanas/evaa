@@ -14,7 +14,7 @@ import { useState } from "react";
 
 const Point = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	font-weight: bold;
 	position: relative;
 
@@ -89,7 +89,7 @@ const Texts = styled.div`
 
 	h3 {
 		color: #3854cc;
-		font-size: 40px;
+		font-size: 44px;
 		font-weight: 800;
 		margin-bottom: 0;
 	}
@@ -124,7 +124,7 @@ const Texts = styled.div`
 
 		p {
 			margin-top: 0;
-			margin-bottom: 24px;
+			margin-bottom: 40px;
 			width: 85%;
 		}
 

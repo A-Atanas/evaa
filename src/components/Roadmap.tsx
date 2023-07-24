@@ -7,7 +7,7 @@ const RoadmapContainer = styled.div`
 	flex-direction: column;
 	align-items: start;
 	align-self: center;
-	width: 100%;
+	width: 90%;
 	margin-bottom: 320px;
 
 	h1 {
